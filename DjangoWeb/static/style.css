@@ -1,0 +1,173 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar стили */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1em;
+    color: #fff;
+}
+
+nav .logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Main Content стили */
+main {
+    text-align: center;
+    padding: 2em;
+}
+
+main h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+main p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+/* Анимация кнопки */
+.animated-button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.animated-button:hover {
+    transform: scale(1.1);
+}
+
+/* Footer стили */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Стили для страницы продуктов */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5em;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.product p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Стили для страницы "О нас" */
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1em;
+}
+
+.about-section h2 {
+    font-size: 1.8em;
+    margin-top: 1em;
+}
+
+.about-section p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+/* Стили для страницы "Контакты" */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1em;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #ff4500;
+}

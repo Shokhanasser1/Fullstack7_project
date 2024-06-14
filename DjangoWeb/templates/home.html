@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>
+    Home page
+</title>
+{% endblock %}
+
+{% block content %}
+
+{% include 'navbar.html' %}
+<main>
+    <h1>Добро пожаловать на мой сайт!</h1>
+    <p>Здесь вы найдете много интересной информации.</p>
+    <button class="animated-button">Узнать больше</button>
+</main>
+
+
+{% include 'footer.html' %}
+
+{% endblock %}

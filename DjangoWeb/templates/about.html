@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+<title>
+    About page
+</title>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+{% endblock %}
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+<h1>О нас</h1>
+<p>Добро пожаловать на нашу страницу "О нас". Мы стремимся предоставить вам лучший опыт и информацию.</p>
+<div class="about-section">
+    <h2>Наша миссия</h2>
+    <p>Мы стремимся предоставить качественные продукты и услуги нашим клиентам. Наша цель - удовлетворение потребностей
+        каждого клиента.</p>
+
+    <h2>Наша команда</h2>
+    <p>У нас работает команда профессионалов, каждый из которых вносит свой вклад в наш успех.</p>
+
+    <h2>Контакты</h2>
+    <p>Вы можете связаться с нами через страницу <a href="{% url 'contact' %}">Контакты</a>.</p>
+</div>
+<p>Welcome to the about page!</p>
+
+{% include 'footer.html' %}
+{% endblock %}

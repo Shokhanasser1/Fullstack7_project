@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+<title>
+    Products page
+</title>
+{% endblock %}
+
+{% block content %}
+{% include 'navbar.html' %}
+
+<main>
+    <h1>Наши Продукты</h1>
+    <div class="product-list">
+        {% for product in products %}
+        <div class="product">
+            <h2>{{ product.name }}</h2>
+            <p>{{ product.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</main>
+
+{% include 'footer.html' %}
+{% endblock %}
