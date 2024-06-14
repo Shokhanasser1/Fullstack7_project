@@ -66,6 +66,7 @@ main p {
     font-size: 1em;
     cursor: pointer;
     transition: transform 0.3s;
+    text-decoration: none;
 }
 
 .animated-button:hover {
